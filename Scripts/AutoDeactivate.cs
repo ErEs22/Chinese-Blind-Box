@@ -20,7 +20,7 @@ public class AutoDeactivate : MonoBehaviour
     }
     IEnumerator DeactivateCoroutine()
     {
-        yield return waitLifeTime;
+        yield return waitLifeTime;//等待销毁或禁用时间
         if (destroyGameObject)
         {
             Destroy(gameObject);
