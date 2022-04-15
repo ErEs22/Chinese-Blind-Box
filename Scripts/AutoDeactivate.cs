@@ -23,7 +23,7 @@ public class AutoDeactivate : MonoBehaviour
         yield return waitLifeTime;//等待销毁或禁用时间
         if (destroyGameObject)
         {
-            Destroy(gameObject);
+            Destroy(gameObject);//销毁对象
         }
         else
         {
