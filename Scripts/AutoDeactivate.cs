@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 /// <summary>
-/// 
+/// 自动销毁或者禁用
 /// </summary>
 public class AutoDeactivate : MonoBehaviour
 {
@@ -27,7 +27,7 @@ public class AutoDeactivate : MonoBehaviour
         }
         else
         {
-            if(gameObject.activeSelf == true)
+            if (gameObject.activeSelf == true)
             {
                 gameObject.SetActive(false);
             }
