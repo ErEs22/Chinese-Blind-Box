@@ -10,15 +10,18 @@ using UnityEngine.UI;
 public class BlockEvent : MonoBehaviour
 {
     Image image;
-    public bool isSelected;//是否被选中
-    public bool isCompared;//是否已配对
+    [HideInInspector] public Text valueText;
+    [HideInInspector] public bool isSelected;//是否被选中
+    [HideInInspector] public bool isCompared;//是否已配对
+    public string value;
     private void Awake()
     {
         image = GetComponent<Image>();
+        valueText = transform.GetChild(0).GetChild(0).GetComponent<Text>();
     }
     private void OnEnable()
     {
-
+        valueText.text = value;
     }
     public void SelectCard()//鼠标移动到卡片上的状态
     {
@@ -31,7 +34,7 @@ public class BlockEvent : MonoBehaviour
     {
         if (!isSelected && !isCompared && !GameController.Instance.isListFull)
         {
-            image.color = new Color(217, 151, 64, 0);
+            image.color = new Color(1, 1, 1, 0);
         }
     }
     public void ClickCard()//点击卡片执行的动作，选中状态取反，将这个对象加入选中卡片的集合中，如果为选中状态，再次点击移出集合并取消选中
