@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99aa5544b969359408fc7df0036632c6, type: 3}
+  m_Name: PoetryDic
+  m_EditorClassIdentifier: 
+  poetry:
+  - answerType: 1
+    key: "\u5E8A\u524D\u660E\u6708\u5149"
+    value: "\u5E8A\u524D\u660E\u6708\u5149\uFF0C\u7591\u4F3C\u5730\u4E0A\u971C"
+  - answerType: 1
+    key: "\u98DE\u6D41\u76F4\u4E0B\u4E09\u5343\u5C3A"
+    value: "\u98DE\u6D41\u76F4\u4E0B\u4E09\u5343\u5C3A\uFF0C\u7591\u662F\u94F6\u6CB3\u843D\u4E5D\u5929"
+  - answerType: 1
+    key: "\u957F\u98CE\u7834\u6D6A\u4F1A\u6709\u65F6"
+    value: "\u957F\u98CE\u7834\u6D6A\u4F1A\u6709\u65F6\uFF0C\u76F4\u6302\u4E91\u5E06\u6D4E\u6CA7\u6D77"
+  - answerType: 1
+    key: "\u5CE8\u7709\u5C71\u6708\u534A\u8F6E\u79CB"
+    value: "\u5CE8\u7709\u5C71\u6708\u534A\u8F6E\u79CB\uFF0C\u5F71\u5165\u5E73\u7F8C\u6C5F\u6C34\u6D41"
+  - answerType: 1
+    key: "\u6E21\u8FDC\u8346\u95E8\u5916"
+    value: "\u6E21\u8FDC\u8346\u95E8\u5916\uFF0C\u6765\u4ECE\u695A\u56FD\u6E38"
+  - answerType: 1
+    key: "\u660E\u6708\u51FA\u5929\u5C71"
+    value: "\u660E\u6708\u51FA\u5929\u5C71\uFF0C\u82CD\u832B\u4E91\u6D77\u95F4"
+  - answerType: 1
+    key: "\u5C0F\u65F6\u4E0D\u8BC6\u6708"
+    value: "\u5C0F\u65F6\u4E0D\u8BC6\u6708\uFF0C\u547C\u4F5C\u767D\u7389\u76D8"
+  - answerType: 1
+    key: "\u71D5\u8349\u5982\u78A7\u4E1D"
+    value: "\u71D5\u8349\u5982\u78A7\u4E1D\uFF0C\u79E6\u6851\u4F4E\u7EFF\u679D"
+  - answerType: 1
+    key: "\u5927\u9053\u5982\u9752\u5929"
+    value: "\u5927\u9053\u5982\u9752\u5929\uFF0C\u6211\u72EC\u4E0D\u5F97\u51FA"
+  - answerType: 1
+    key: "\u5BAB\u5973\u5982\u82B1\u6EE1\u6625\u6BBF"
+    value: "\u5BAB\u5973\u5982\u82B1\u6EE1\u6625\u6BBF\uFF0C\u53EA\u4ECA\u60DF\u6709\u9E67\u9E2A\u98DE"

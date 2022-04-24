@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 /// <summary>
-/// 游戏控制器
+/// 汉字部首游戏控制器
 /// </summary>
 public class GameController : Singleton<GameController>
 {
