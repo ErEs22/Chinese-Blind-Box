@@ -4,7 +4,7 @@ using UnityEngine;
 /// <summary>
 /// 汉字数据库
 /// </summary>
-[CreateAssetMenu(fileName = "WordDic")]
+[CreateAssetMenu(fileName = "WordDic", menuName = "WordDataBase")]
 public class WordDB_SO : ScriptableObject
 {
     public SplitWord[] splitWord;

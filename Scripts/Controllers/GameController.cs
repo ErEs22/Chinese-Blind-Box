@@ -9,6 +9,8 @@ public class GameController : Singleton<GameController>
 {
     [SerializeField] WordDB_SO wordDB;
     [SerializeField] Text compareWord;//配对的文字组件
+    [SerializeField] List<GameObject> splitWord;
+    [SerializeField] Transform parent;
     [HideInInspector] public List<GameObject> selectedCards;//配对卡片的集合
     [HideInInspector] public bool isListFull;
     List<string> levelOneList;
@@ -23,7 +25,16 @@ public class GameController : Singleton<GameController>
     {
         InitilizeLevelList();
         SetRandomText();
+        InitilizeCards();
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            CompareCards();
+        }
+    }
+    void SetRandomText() => compareWord.text = levelOneList[Tool.GetRandomNumber(0, levelOneList.Count)];//设置随机的一个汉字
     void InitilizeLevelList()//初始化关卡文字库
     {
         foreach (var item in wordDB.wordDic)
@@ -31,7 +42,16 @@ public class GameController : Singleton<GameController>
             levelOneList.Add(item.Key);
         }
     }
-    void SetRandomText() => compareWord.text = levelOneList[Tool.GetRandomNumber(0, levelOneList.Count)];//设置随机的一个汉字
+    void InitilizeCards()//初始化场景中的卡片，随机放置卡片的位置
+    {
+        for (int i = 0; i < 24; i++)
+        {
+            int randomNumber = Tool.GetRandomNumber(0, splitWord.Count);
+            GameObject card = Instantiate(splitWord[randomNumber], parent);
+            splitWord.Remove(splitWord[randomNumber]);
+            // splitWord.RemoveAt(randomNumber);
+        }
+    }
     public void CompareCards()//配对选中的两张卡片
     {
         // print(selectedCards.Count);
@@ -53,14 +73,14 @@ public class GameController : Singleton<GameController>
             selectedCards[1].GetComponent<Image>().color = new Color(1, 1, 1, 0);
             selectedCards[1].transform.Find("Frame").GetComponent<Image>().color = new Color(1, 1, 1, 0);
             levelOneList.Remove(compareWord.text);
-            if (levelOneList != null)
+            if (levelOneList.Count != 0)
             {
                 SetRandomText();
             }
             else
             {
                 //TODO成功消除所有卡片，提示玩家已通关
-
+                compareWord.text = "";
                 print("成功消除所有卡片，你可以进入下一关了");
             }
         }

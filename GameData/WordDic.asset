@@ -25,3 +25,39 @@ MonoBehaviour:
     value:
     - "\u4EBB"
     - "\u6614"
+  - key: "\u5531"
+    value:
+    - "\u53E3"
+    - "\u660C"
+  - key: "\u89E6"
+    value:
+    - "\u89D2"
+    - "\u866B"
+  - key: "\u5988"
+    value:
+    - "\u5973"
+    - "\u9A6C"
+  - key: "\u6B21"
+    value:
+    - "\u51AB"
+    - "\u6B20"
+  - key: "\u5F90"
+    value:
+    - "\u5F73"
+    - "\u4F59"
+  - key: "\u7956"
+    value:
+    - "\u793B"
+    - "\u4E14"
+  - key: "\u660E"
+    value:
+    - "\u65E5"
+    - "\u6708"
+  - key: "\u7C92"
+    value:
+    - "\u7C73"
+    - "\u7ACB"
+  - key: "\u5730"
+    value:
+    - "\u571F"
+    - "\u4E5F"
