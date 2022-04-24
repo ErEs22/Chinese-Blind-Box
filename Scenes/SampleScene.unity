@@ -349,6 +349,10 @@ PrefabInstance:
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 1206322540}
+    - target: {fileID: 4132382600250829584, guid: 23673b95c7c1344438dc1490096f0320, type: 3}
+      propertyPath: value
+      value: "\u4EBB"
+      objectReference: {fileID: 0}
     - target: {fileID: 4132382600250829585, guid: 23673b95c7c1344438dc1490096f0320, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -584,6 +588,10 @@ PrefabInstance:
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 1132634316}
+    - target: {fileID: 4132382600250829584, guid: 23673b95c7c1344438dc1490096f0320, type: 3}
+      propertyPath: value
+      value: "\u4E14"
+      objectReference: {fileID: 0}
     - target: {fileID: 4132382600250829585, guid: 23673b95c7c1344438dc1490096f0320, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -690,6 +698,10 @@ PrefabInstance:
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 1715617389}
+    - target: {fileID: 4132382600250829584, guid: 23673b95c7c1344438dc1490096f0320, type: 3}
+      propertyPath: value
+      value: "\u6614"
+      objectReference: {fileID: 0}
     - target: {fileID: 4132382600250829585, guid: 23673b95c7c1344438dc1490096f0320, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2162,6 +2174,10 @@ PrefabInstance:
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 1061930272}
+    - target: {fileID: 4132382600250829584, guid: 23673b95c7c1344438dc1490096f0320, type: 3}
+      propertyPath: value
+      value: "\u5973"
+      objectReference: {fileID: 0}
     - target: {fileID: 4132382600250829585, guid: 23673b95c7c1344438dc1490096f0320, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

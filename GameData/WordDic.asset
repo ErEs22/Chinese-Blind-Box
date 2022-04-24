@@ -17,3 +17,11 @@ MonoBehaviour:
     value:
     - "\u4EB2"
     - "\u65A4"
+  - key: "\u59D0"
+    value:
+    - "\u5973"
+    - "\u4E14"
+  - key: "\u501F"
+    value:
+    - "\u4EBB"
+    - "\u6614"
